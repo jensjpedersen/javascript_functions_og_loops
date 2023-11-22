@@ -17,20 +17,18 @@ function formatText(str) {
 */
 
 
-let formatTextArrow = (str) => {
-    return str.trim().toLowerCase()
-}
+let formatTextArrow = (str) => str.trim().toLowerCase()
 
 console.log(formatTextArrow("      Lorem IPSUM.    "));
 
-/* Exercise #3: The autoReply function below takes a function as parameter, call (run/execute) the autoReply function with console.log as the callback function.
-                 Doing so, you should see "This is an automated response." in the console.
+/* Exercise #3: The autoReply function below takes a function as parameter,
+   call (run/execute) the autoReply function with console.log as the callback function.
+   Doing so, you should see "This is an automated response." in the console.
 */
 
 function autoReply(customFunction) {
-  // Your code here
+    customFunction("This is an automated response")
 }
-
 autoReply(console.log);
 
 /* Exercise #3b: Create a function that will display some provided text on the website.
