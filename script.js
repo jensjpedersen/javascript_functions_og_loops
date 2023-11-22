@@ -11,15 +11,15 @@ function formatText(str) {
     return str.trim().toLowerCase()
 }
 
-return 
 /* Exercise #2:
       Change the function in exercise #1 to be an arrow function.
       If you're getting errors: google javascript hoisting. You may need to move the console.log(formatText("      Lorem IPSUM.    ")) from line 7.
 */
 
 
-  // Your code here
-
+let formatTextArrow = (str) => {
+    return str.trim().toLowerCase()
+}
 
 console.log(formatTextArrow("      Lorem IPSUM.    "));
 
