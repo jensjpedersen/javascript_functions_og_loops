@@ -8,9 +8,10 @@
 console.log(formatText("      Lorem IPSUM.    ")); // expected output (without quotes): "lorem ipsum."
 
 function formatText(str) {
-  // Your code here
+    return str.trim().toLowerCase()
 }
 
+return 
 /* Exercise #2:
       Change the function in exercise #1 to be an arrow function.
       If you're getting errors: google javascript hoisting. You may need to move the console.log(formatText("      Lorem IPSUM.    ")) from line 7.
