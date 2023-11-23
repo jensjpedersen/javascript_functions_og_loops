@@ -130,9 +130,10 @@ checkArray(console.log, threeFruits);
 */
 
 function loopThrough(arr) {
-  // Your code here
+    arr.forEach(function (element, index) {console.log(element + ' at index ' + index)})
 }
 
+l('Exercise 6.')
 loopThrough(fiveWords);
 loopThrough(threeFruits);
 
