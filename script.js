@@ -146,12 +146,29 @@ loopThrough(threeFruits);
                  console.log(tripleNums) // [3,6,9,12,15]
 */
 
+/* 
+forEach 
+change element
+reutnr new array
+
+*/ 
+
 const nums = [1, 2, 3, 4, 5];
 const nums2 = [4321, 43, 2, 897698, 321, 87];
 
 function tripleArrayValues(arr) {
-  // Your code here
+    let element = arr; //?????
+    return element*3
 }
+
+
+console.log('Exercise 7');
+let tripleNums = nums.map(tripleArrayValues)
+console.log(tripleNums)
+
+let tripleNums2 = nums2.map(tripleArrayValues)
+console.log(tripleNums2)
+
 
 /* Excercise #8: Use a different array method that will return a new array based on some filter,
                  For example lets say we just want odd numbers from the nums array:
