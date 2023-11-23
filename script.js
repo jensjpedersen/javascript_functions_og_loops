@@ -46,7 +46,7 @@ const display = (str) => {
     const h1 = document.createElement("h1");
     const textNode = document.createTextNode(str);
     h1.appendChild(textNode);
-    document.body.appendChild(h1)
+    console.log(document.body.appendChild(h1))
   
 };
 
@@ -61,7 +61,10 @@ autoReply(display);
 */
 
 function customAutoReply(method, str) {
-  // Your code here
+    const h1 = document.createElement("h1");
+    const textNode = document.createTextNode(str);
+    h1.appendChild(textNode);
+    method(document.body.appendChild(h1))
 }
 
 customAutoReply(console.log, "This is also an automated response.");
