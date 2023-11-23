@@ -74,6 +74,7 @@ customAutoReply(console.log, "This is also an automated response.");
   Use both the function() {} syntax, and then also arrow function.
 */
 
+// TODO: 
 autoReply(function (text) {
   // Your code here
 });
@@ -105,7 +106,9 @@ autoReply(function (text) {
 
 
 function checkArray(callback, arr) {
-  // Your code here
+    for (let e of arr) {
+        callback(e)
+    }
 }
 
 const fiveWords = ["one", "two", "three", "four", "five"];
