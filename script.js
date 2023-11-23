@@ -1,4 +1,5 @@
 
+const l = (str) => console.log(str); 
 
 /* Exercise #1:
       Fix the formatText function below such that it fits the given specification:
@@ -41,9 +42,14 @@ autoReply(console.log);
                   console.log the result.
 */
 
-const display = () => {
-  // Your code here
+const display = (str) => {
+    const h1 = document.createElement("h1");
+    const textNode = document.createTextNode(str);
+    h1.appendChild(textNode);
+    document.body.appendChild(h1)
+  
 };
+
 autoReply(display);
 
 /* Exercise #4: Create a function that takes two arguments:
