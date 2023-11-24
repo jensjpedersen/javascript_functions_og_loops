@@ -1,6 +1,3 @@
-
-const l = (str) => console.log(str); 
-
 /* Exercise #1:
       Fix the formatText function below such that it fits the given specification:
        * returns given parameter (str) with leading and trailing spaces removed, and all letters converted to lowercase.
@@ -50,7 +47,9 @@ const display = (str) => {
   
 };
 
-autoReply(display);
+console.log('Exercise 3b');
+display("hello world!");
+autoReply(display); 
 
 /* Exercise #4: Create a function that takes two arguments:
                  1. a callback function
@@ -74,11 +73,12 @@ customAutoReply(console.log, "This is also an automated response.");
   Use both the function() {} syntax, and then also arrow function.
 */
 
-// TODO: 
+console.log(`Exercise 4b`);
 autoReply(function (text) {
-  // Your code here
+    console.log('func: ' + text)
 });
 
+autoReply((text) => console.log('arrow func: ' + text)) 
 
 /* Exercise #5: Create a function that takes the following parameters:
                  1. An array
