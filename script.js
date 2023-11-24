@@ -133,7 +133,7 @@ function loopThrough(arr) {
     arr.forEach(function (element, index) {console.log(element + ' at index ' + index)})
 }
 
-l('Exercise 6.')
+console.log('Exercise 6.')
 loopThrough(fiveWords);
 loopThrough(threeFruits);
 
@@ -146,28 +146,18 @@ loopThrough(threeFruits);
                  console.log(tripleNums) // [3,6,9,12,15]
 */
 
-/* 
-forEach 
-change element
-reutnr new array
-
-*/ 
 
 const nums = [1, 2, 3, 4, 5];
 const nums2 = [4321, 43, 2, 897698, 321, 87];
 
 function tripleArrayValues(arr) {
-    let element = arr; //?????
-    return element*3
+    return arr.map(function (element) {return element*3})
 }
 
 
-console.log('Exercise 7');
-let tripleNums = nums.map(tripleArrayValues)
-console.log(tripleNums)
-
-let tripleNums2 = nums2.map(tripleArrayValues)
-console.log(tripleNums2)
+console.log('Exercise 7.');
+console.log(tripleArrayValues(nums));
+console.log(tripleArrayValues(nums2));
 
 
 /* Excercise #8: Use a different array method that will return a new array based on some filter,
@@ -181,8 +171,9 @@ console.log(tripleNums2)
 */
 
 function logEvenOfArray(arr) {
-// Your code here
+    return arr.filter((value) => value % 2 == 0)
 }
 
-logEvenOfArray(nums);
-logEvenOfArray(nums2);
+console.log('Exercise 8');
+console.log(logEvenOfArray(nums));
+console.log(logEvenOfArray(nums2));
